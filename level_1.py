@@ -174,7 +174,7 @@ def with_computer(game_board):
     game_board = Tk()
     game_board.title("Tic Tac Toe")
     game_board.resizable(False, False)
-    game_board.iconbitmap("C:/Users/KATTAKART/Downloads/favicon.ico")
+    game_board.iconbitmap("favicon.ico")
     marker1 = Button(game_board, text="Player : X", width=8, font=('bold', 10), fg='black', bg="tan", state=DISABLED)
     marker1.grid(row=1, column=1)
     marker2 = Button(game_board, text="Computer : O", width=9, font=('bold', 10), fg='black', bg="tan", state=DISABLED)
@@ -188,7 +188,7 @@ def with_player(game_board):
     game_board = Tk()  # Displays the game window interface
     game_board.title("Tic Tac Toe")
     game_board.resizable(False, False)  # Disabling the resize of the gridboard
-    game_board.iconbitmap("C:\\Users\\KATTAKART\\Downloads\\favicon.ico")
+    game_board.iconbitmap("favicon.ico")
     marker1 = Button(game_board, text="Player 1 : X", width=10, state=DISABLED)
     marker1.grid(row=1, column=1)
     marker2 = Button(game_board, text="Player 2 : O", width=10, state=DISABLED)
@@ -201,9 +201,9 @@ def play():
     menu = Tk()
     menu.geometry("418x500")
     menu.title("Tic Tac Toe")
-    menu.iconbitmap("C:/Users/KATTAKART/Downloads/favicon.ico")
+    menu.iconbitmap("favicon.ico")
     menu.resizable(False, False)
-    menu.img = Image.open("C:\\Users\\KATTAKART\\Downloads\\Temp-500x500.jpg")  # Setting up the background image
+    menu.img = Image.open("Temp-500x500.jpg")  # Setting up the background image
     menu.bg = ImageTk.PhotoImage(menu.img)
     welcome_frame = Label(menu, image=menu.bg)
     welcome_frame.pack(fill=BOTH, expand=True)
@@ -213,12 +213,12 @@ def play():
 
     Label(welcome_frame, text="--Choose the player mode--", bg='light yellow', fg='black',
           font=('', 20, 'bold')).pack(padx=10, pady=40, side='top')
-    singleimg = PhotoImage(file=r"C:\Users\KATTAKART\Pictures\single player.png")
+    singleimg = PhotoImage(file=r"single player.png")
     Button(welcome_frame, text="Single Player", command=with_pc,image=singleimg,
            bg='tan', fg='black',
            font=('', 18, 'italic'),
            ).pack(padx=12, pady=12, side='left')
-    doubleimg = PhotoImage(file=r"C:\Users\KATTAKART\Downloads\multiplayer.png")
+    doubleimg = PhotoImage(file=r"multiplayer.png")
     Button(welcome_frame, text="Multi Player", command=with_hum, bg='tan', fg='black',image=doubleimg,
            font=('', 18, 'italic'),
            ).pack(padx=12, pady=12, side='right')
@@ -235,7 +235,7 @@ def play():
     toggle_button.pack(pady=30,side='bottom')
 
     def play_sound():  # Defining the function to play music.
-        pygame.mixer.music.load("C:/Users/KATTAKART/Downloads/Happy-Whistling-Ukulele.mp3")  # Loading the music
+        pygame.mixer.music.load("Happy-Whistling-Ukulele.mp3")  # Loading the music
         pygame.mixer.music.play()
 
     menu.mainloop()  # execute when we want to run our application
