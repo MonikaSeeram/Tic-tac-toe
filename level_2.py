@@ -190,7 +190,7 @@ def withpc(game_board):
     game_board.destroy()
     game_board = Tk()
     game_board.title("Tic Tac Toe")
-    game_board.iconbitmap("C:\\Users\\KATTAKART\\Downloads\\favicon.ico")
+    game_board.iconbitmap("favicon.ico")
     l1 = Button(game_board, text="Player : X", width=10)
     l1.grid(row=1, column=2)
     l2 = Button(game_board, text="Computer : O", width=10, state=DISABLED)
@@ -203,7 +203,7 @@ def withplayer(game_board):
     game_board.destroy()
     game_board = Tk()
     game_board.title("Tic Tac Toe")
-    game_board.iconbitmap("C:\\Users\\KATTAKART\\Downloads\\favicon.ico")
+    game_board.iconbitmap("favicon.ico")
     l1 = Button(game_board, text="Player 1 : X", width=10)
     l1.grid(row=1, column=2)
     l2 = Button(game_board, text="Player 2 : O", width=10, state=DISABLED)
@@ -218,7 +218,7 @@ def play1():
     menu.title("Tic Tac Toe")
     menu.iconbitmap("C:/Users/KATTAKART/Downloads/favicon.ico")
     menu.resizable(False,False)
-    menu.img = Image.open("C:\\Users\\KATTAKART\\Downloads\\Temp-500x500.jpg")  # Setting up the background image
+    menu.img = Image.open("Temp-500x500.jpg")  # Setting up the background image
     menu.bg = ImageTk.PhotoImage(menu.img)
     welcome_frame = Label(menu, image=menu.bg)
     welcome_frame.pack(fill=BOTH, expand=True)
@@ -228,10 +228,10 @@ def play1():
     Button(welcome_frame, text="--select player mode--", bg='light yellow', fg='black',
            font=('', 20, 'bold')).pack(padx=10, pady=20, side='top')
 
-    singleimg= PhotoImage(file=r"C:\Users\KATTAKART\Pictures\single player.png")
+    singleimg= PhotoImage(file=r"single player.png")
     Button(welcome_frame, image=singleimg, command=pc).pack(padx=30, pady=5, side='left')
 
-    doubleimg = PhotoImage(file=r"C:\Users\KATTAKART\Downloads\multiplayer.png")
+    doubleimg = PhotoImage(file=r"multiplayer.png")
     Button(welcome_frame, text="multi player", command=player,image=doubleimg,bg='tan').pack(padx=30, pady=5, side='right')
 
     def Simpletoggle():
@@ -245,7 +245,7 @@ def play1():
     toggle_button.pack(side='bottom',pady=20)
 
     def play_sound():  # Defining the function to play music.
-        pygame.mixer.music.load("C:/Users/KATTAKART/Downloads/Happy-Whistling-Ukulele.mp3")  # Loading the music
+        pygame.mixer.music.load("Happy-Whistling-Ukulele.mp3")  # Loading the music
         pygame.mixer.music.play()
 
     menu.mainloop()
