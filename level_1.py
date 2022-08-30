@@ -201,9 +201,9 @@ def play():
     menu = Tk()
     menu.geometry("418x500")
     menu.title("Tic Tac Toe")
-    menu.iconbitmap("favicon.ico")
+    menu.iconbitmap("favicon.ico (1)")
     menu.resizable(False, False)
-    menu.img = Image.open("Temp-500x500.jpg")  # Setting up the background image
+    menu.img = Image.open("Temp-500x500.jpg (1)")  # Setting up the background image
     menu.bg = ImageTk.PhotoImage(menu.img)
     welcome_frame = Label(menu, image=menu.bg)
     welcome_frame.pack(fill=BOTH, expand=True)
@@ -235,7 +235,7 @@ def play():
     toggle_button.pack(pady=30,side='bottom')
 
     def play_sound():  # Defining the function to play music.
-        pygame.mixer.music.load("Happy-Whistling-Ukulele.mp3")  # Loading the music
+        pygame.mixer.music.load("Happy-Whistling-Ukulele.mp3 (1)")  # Loading the music
         pygame.mixer.music.play()
 
     menu.mainloop()  # execute when we want to run our application
