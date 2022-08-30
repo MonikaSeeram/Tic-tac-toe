@@ -226,13 +226,13 @@ def play1():
     player = partial(withplayer, menu)
 
     Button(welcome_frame, text="--select player mode--", bg='light yellow', fg='black',
-           font=('', 20, 'bold')).pack(padx=10, pady=20, side='top')
+           font=('', 20, 'bold')).pack(padx=10, pady=40, side='top')
 
     singleimg= PhotoImage(file=r"single player.png")
-    Button(welcome_frame, image=singleimg, command=pc).pack(padx=30, pady=5, side='left')
+    Button(welcome_frame, image=singleimg, command=pc).pack(padx=12, pady=12, side='left')
 
     doubleimg = PhotoImage(file=r"multiplayer.png")
-    Button(welcome_frame, text="multi player", command=player,image=doubleimg,bg='tan').pack(padx=30, pady=5, side='right')
+    Button(welcome_frame, text="multi player", command=player,image=doubleimg,bg='tan').pack(padx=12, pady=12, side='right')
 
     def Simpletoggle():
         if toggle_button.config('text')[-1] == '🔊':
