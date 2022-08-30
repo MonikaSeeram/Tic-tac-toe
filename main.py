@@ -7,7 +7,7 @@ import pygame
 menu = Tk()
 menu.geometry("418x500")
 menu.title("Tic Tac Toe")
-menu.iconbitmap("favicon.ico")
+menu.iconbitmap("favicon (1).ico")
 menu.resizable(False, False)
 menu.img = Image.open("ggg.png")  # Setting up the background image
 menu.bg = ImageTk.PhotoImage(menu.img)
