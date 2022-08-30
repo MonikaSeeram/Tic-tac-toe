@@ -216,7 +216,7 @@ def play1():
     menu = Tk()
     menu.geometry("418x500")
     menu.title("Tic Tac Toe")
-    menu.iconbitmap("favicon.ico (1)")
+    menu.iconbitmap("favicon (1).ico")
     menu.resizable(False,False)
     menu.img = Image.open("Temp-500x500 (1).jpg")  # Setting up the background image
     menu.bg = ImageTk.PhotoImage(menu.img)
