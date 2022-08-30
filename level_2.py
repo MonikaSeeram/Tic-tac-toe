@@ -190,7 +190,7 @@ def withpc(game_board):
     game_board.destroy()
     game_board = Tk()
     game_board.title("Tic Tac Toe")
-    game_board.iconbitmap("favicon.ico")
+    game_board.iconbitmap("favicon (1).ico")
     l1 = Button(game_board, text="Player : X", width=10)
     l1.grid(row=1, column=2)
     l2 = Button(game_board, text="Computer : O", width=10, state=DISABLED)
@@ -203,7 +203,7 @@ def withplayer(game_board):
     game_board.destroy()
     game_board = Tk()
     game_board.title("Tic Tac Toe")
-    game_board.iconbitmap("favicon.ico (1)")
+    game_board.iconbitmap("favicon (1).ico")
     l1 = Button(game_board, text="Player 1 : X", width=10)
     l1.grid(row=1, column=2)
     l2 = Button(game_board, text="Player 2 : O", width=10, state=DISABLED)
@@ -218,7 +218,7 @@ def play1():
     menu.title("Tic Tac Toe")
     menu.iconbitmap("favicon.ico (1)")
     menu.resizable(False,False)
-    menu.img = Image.open("Temp-500x500.jpg (1)")  # Setting up the background image
+    menu.img = Image.open("Temp-500x500 (1).jpg")  # Setting up the background image
     menu.bg = ImageTk.PhotoImage(menu.img)
     welcome_frame = Label(menu, image=menu.bg)
     welcome_frame.pack(fill=BOTH, expand=True)
@@ -245,7 +245,7 @@ def play1():
     toggle_button.pack(side='bottom',pady=20)
 
     def play_sound():  # Defining the function to play music.
-        pygame.mixer.music.load("Happy-Whistling-Ukulele.mp3 (1)")  # Loading the music
+        pygame.mixer.music.load("Happy-Whistling-Ukulele (1).mp3")  # Loading the music
         pygame.mixer.music.play()
 
     menu.mainloop()
